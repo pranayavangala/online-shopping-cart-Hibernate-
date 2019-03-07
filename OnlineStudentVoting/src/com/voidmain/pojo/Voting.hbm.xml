@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 22, 2018 8:26:44 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Voting" table="VOTING">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="votedBy" type="java.lang.String">
+            <column name="VOTEDBY" />
+        </property>
+        <property name="votedTo" type="java.lang.String">
+            <column name="VOTEDTO" />
+        </property>
+    </class>
+</hibernate-mapping>
